@@ -10,4 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+export PATH=/usr/local/bin:~/bin:/Applications/Postgres93.app/Contents/MacOS/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Library/PostgreSQL/9.0/bin:/usr/local/Cellar/smlnj/110.75/libexec/bin:~/dotfiles:$PATH
+
 # Customize to your needs...
+source $HOME/.bash_aliases
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
